@@ -1,0 +1,178 @@
+/* Width smaller than 1200px  (768px to 1023px) */
+
+@media only screen and (max-width: 1200px) {}
+
+/* For small to big tablets (768px to 1023px) */
+
+@media only screen and (max-width: 1023px) {
+    /* Responsive Navigation Bar */
+    .nav-row {
+        margin: 0;
+    }
+    .navbar a {
+        display: none;
+    }
+    #home {
+        display: none;
+    }
+    .navbar a.nav-icon {
+        float: right;
+        display: block;
+        margin-top: 25px;
+    }
+    .navbar.responsive {
+        position: fixed;
+        margin-left: auto;
+        z-index: 1;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+        background-color: rgba(73, 73, 73, 0.87);
+        transition: all 0.3s ease-out;
+    }
+    .navbar.responsive a.nav-icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    /* Sticky Navigation */
+    .fixed-nav .navbar a.nav-icon {
+        margin-top: 0px;
+    }
+}
+
+/* For screen size smaller than iPad (481px to 767px) */
+
+@media only screen and (max-width: 767px) {
+    .title {
+        justify-content: center;
+    }
+    #logo img {
+        height: 30px;
+    }
+    .fixed-nav #logo img {
+        height: 25px;
+    }
+    /* Responsive Header */
+    .header-container h3 {
+        font-size: 21px;
+    }
+    .header-container h4 {
+        font-size: 18px;
+    }
+    #name {
+        font-size: 25px;
+    }
+    .btn:link, .btn:visited {
+        padding: 8px 12px;
+        margin-top: 15px;
+        font-size: 1.0em;
+        border-radius: 6px;
+    }
+    .learn-more {
+        margin-right: 4px;
+    }
+    /* Responsive About Me Section */
+    #introduction p {
+        font-size: 16px;
+    }
+    .fa {
+        padding: 10px;
+        font-size: 25px;
+        width: 45px;
+        margin: 4px 1px;
+        border-radius: 10%;
+    }
+    .fa:hover {
+        font-size: 1.45em;
+    }
+    /* Responsive Services */
+    .card {
+        width: 200px;
+        height: 250px;
+    }
+    .card p {
+        font-size: 0.9em;
+    }
+    .card h5 {
+        font-size: 18px;
+    }
+    /* Responsive Portfolio */
+    /* Hiding Back To Top Icon*/
+    #back-to-top {
+        display: none;
+        right: 0;
+        height: 30px;
+        width: 30px;
+        padding-right: 2px;
+    }
+    #about-me, #contact-components {
+        grid-gap: 10px;
+    }
+}
+
+/* For small phones like iPhone 4 (360 to 480px) */
+
+@media only screen and (max-width: 480px) {
+    .nav-icon {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+    }
+    #about {
+        width: 0%;
+    }
+    .cards {
+        padding: 3px;
+    }
+    .card {
+        width: 150px;
+        height: 200px;
+        padding: 10px;
+    }
+    .card img {
+        height: 25px;
+        width: 25px;
+        margin-bottom: 3px;
+    }
+    .card p {
+        font-size: 12px;
+    }
+    .card h5 {
+        font-size: 15px;
+        padding: 5px;
+    }
+}
+
+/* For Even Smaller Mobiles (0 to 360px) */
+
+@media only screen and (max-width:360px) {
+    #about-me, #contact-components {
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    }
+    .cards {
+        padding: 2px;
+    }
+    .card {
+        width: 130px;
+        height: 180px;
+        padding: 5px;
+    }
+    .card img {
+        height: 20px;
+        width: 20px;
+        margin-bottom: 3px;
+    }
+    .card p {
+        font-size: 11px;
+    }
+    .card h5 {
+        font-size: 14px;
+        padding: 5px;
+    }
+}
